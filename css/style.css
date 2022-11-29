@@ -1,47 +1,115 @@
-/* Left container */
-.left-container {
-  position: fixed;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: #031926;
-  height: 100%;
-  width: 400px;
-}
-
-.profile {
-  margin: 40% 0;
-  text-align: center;
-}
-
-.profile img {
-  border-radius: 50%;
-  width: 300px;
-  box-shadow: 0 0 4px 5px #468189;
-}
-
-.profile h2 {
   color: #77aca2;
+}
+
+/* navigasi */
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(70, 129, 137, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  color: #f4e9cd;
+  text-shadow: 0 0 1px #031926;
+  z-index: 9999;
+}
+
+.nav h3 {
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #9dbebb;
+}
+
+.nav ul li a:hover {
+  color: #f4e9cd;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  padding-top: 100px;
+  margin: auto;
+  width: 560px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 20px;
+}
+
+.photo-profile img {
+  width: 400px;
+  border-radius: 30%;
+}
+
+.photo-profile svg {
+  position: absolute;
+  width: 600px;
+  margin-top: -67px;
+  margin-left: -490px;
+  z-index: -99;
+}
+
+.circle {
+  position: absolute;
+  width: 640px;
+  height: 640px;
+  box-shadow: 0 0 10px 12px #468189, 0 0 5px 5px #468189 inset;
+  border-radius: 50%;
+  margin: -530px 0 0 -190px;
+  z-index: -99;
+  animation: fade 8s infinite;
+}
+
+/* about */
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about h2 {
   font-size: 30px;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
-.profile button {
-  width: 50%;
-  background-color: #f4e9cd;
-  color: #031926;
-  font-size: 30px;
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 20px;
-  cursor: pointer;
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
 }
 
-/* Right container */
-body {
-  background-color: #468189;
+.sosmed-list {
+  width: 200px;
 }
 
-.right-container {
-  position: absolute;
-  right: 0;
-  left: 400px;
+.sosmed-list a svg {
+  max-width: 40px;
+  fill: rgba(244, 233, 205, 0.5);
+  margin: 0 10px;
 }
