@@ -1,0 +1,47 @@
+/* Left container */
+.left-container {
+  position: fixed;
+  background-color: #031926;
+  height: 100%;
+  width: 400px;
+}
+
+.profile {
+  margin: 40% 0;
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 300px;
+  box-shadow: 0 0 4px 5px #468189;
+}
+
+.profile h2 {
+  color: #77aca2;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.profile button {
+  width: 50%;
+  background-color: #f4e9cd;
+  color: #031926;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Right container */
+body {
+  background-color: #468189;
+}
+
+.right-container {
+  position: absolute;
+  right: 0;
+  left: 400px;
+}
