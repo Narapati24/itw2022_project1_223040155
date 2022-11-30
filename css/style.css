@@ -11,7 +11,7 @@ body {
 .nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(70, 129, 137, 0.5);
+  background-color: rgba(70, 129, 137, 0.7);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,7 +34,8 @@ body {
 
 .nav ul li a {
   text-decoration: none;
-  color: #9dbebb;
+  color: #77aca2;
+  text-shadow: 0 0 10px #031926;
 }
 
 .nav ul li a:hover {
@@ -112,4 +113,29 @@ body {
   max-width: 40px;
   fill: rgba(244, 233, 205, 0.5);
   margin: 0 10px;
+}
+
+/* Skill */
+.skill {
+  text-align: center;
+  background-color: #77aca2;
+  padding: 100px;
+}
+
+.skill h2 {
+  color: #031926;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.skill div {
+  display: inline;
+  width: 100px;
+  border: 10px solid #f4e9cd;
+  border-radius: 50%;
+}
+
+.skill svg {
+  margin-top: 20px;
+  width: 100px;
 }
