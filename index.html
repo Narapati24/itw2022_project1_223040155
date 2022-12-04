@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- navigation -->
@@ -20,15 +21,15 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skill">Skill</a></li>
-        <li><a href="">Project</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <!-- end nav -->
 
     <!-- hero -->
     <div class="hero" id="hero">
-      <h1>Hai semua, Narapati Disini!</h1>
+      <h1>Hai semua, <span>Narapati</span> Disini!</h1>
       <div class="photo-profile">
         <img src="img/Profile.png" alt="Profile" />
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -45,11 +46,13 @@
 
     <!-- about -->
     <div class="about" id="about">
-      <h2>About</h2>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum a sed fuga
-        accusantium nihil repudiandae excepturi est nemo vitae id!
-      </p>
+      <div class="about-about">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum a sed
+          fuga accusantium nihil repudiandae excepturi est nemo vitae id!
+        </p>
+      </div>
       <div class="sosmed">
         <h2>Sosial Media</h2>
         <div class="sosmed-list">
@@ -129,52 +132,146 @@
 
     <!-- skill -->
     <div class="skill" id="skill">
-      <h2>Bahasa yang dipahami</h2>
-      <div>
-        <svg viewBox="-30 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m0 0 31.800781 448.101562 194.398438 63.898438 194.398437-63.898438 31.800782-448.101562zm0 0"
-            fill="#ff7816"
-          />
-          <path
-            d="m452.398438 0-31.800782 448.101562-194.398437 63.898438v-512zm0 0"
-            fill="#ff4b00"
-          />
-          <path
-            d="m367.5 136h-222.300781l5.398437 75h211.503906l-12.902343 181.597656-123 41.101563-123-41.101563-4.199219-60.597656h60l1.199219 16.5 66 21.898438 66-21.898438 5.398437-77.5h-203.097656l-13.800781-195h291zm0 0"
-            fill="#ececf1"
-          />
-          <g fill="#e2e2e7">
-            <path
-              d="m362.101562 211-12.902343 181.597656-123 41.101563v-63.300781l66-21.898438 5.398437-77.5h-71.398437v-60zm0 0"
-            />
-            <path d="m371.699219 76-4.199219 60h-141.300781v-60zm0 0" />
-          </g>
-        </svg>
-      </div>
-      <div>
-        <svg
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px"
-          y="0px"
-          viewBox="0 0 512 512"
-          style="enable-background: new 0 0 512 512"
-          xml:space="preserve"
-        >
-          <polygon
-            style="fill: #2196f3"
-            points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 "
-          />
-          <polygon
-            style="fill: #fafafa"
-            points="392.768,150.688 387.616,208.576 372.064,382.112 256,414.208 255.904,414.24 139.904,382.112 131.808,291.36 188.64,291.36 192.864,338.432 255.936,355.456 255.968,355.424 319.136,338.4 327.744,259.968 129.088,260.512 123.456,206.88 332.512,204.416 336.736,147.008 117.856,147.616 114.176,94.208 256,94.208 397.824,94.208 "
-          />
-        </svg>
+      <h2>Personal Skill</h2>
+      <div class="skill-list">
+        <div class="bahasa">
+          <h3>Bahasa Pemograman</h3>
+          <div>
+            <svg
+              viewBox="-30 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
+              <path
+                d="m0 0 31.800781 448.101562 194.398438 63.898438 194.398437-63.898438 31.800782-448.101562zm0 0"
+                fill="#ff7816"
+              />
+              <path
+                d="m452.398438 0-31.800782 448.101562-194.398437 63.898438v-512zm0 0"
+                fill="#ff4b00"
+              />
+              <path
+                d="m367.5 136h-222.300781l5.398437 75h211.503906l-12.902343 181.597656-123 41.101563-123-41.101563-4.199219-60.597656h60l1.199219 16.5 66 21.898438 66-21.898438 5.398437-77.5h-203.097656l-13.800781-195h291zm0 0"
+                fill="#ececf1"
+              />
+              <g fill="#e2e2e7">
+                <path
+                  d="m362.101562 211-12.902343 181.597656-123 41.101563v-63.300781l66-21.898438 5.398437-77.5h-71.398437v-60zm0 0"
+                />
+                <path d="m371.699219 76-4.199219 60h-141.300781v-60zm0 0" />
+              </g>
+            </svg>
+          </div>
+          <div>
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
+              <polygon
+                style="fill: #2196f3"
+                points="32,0 72.8,460.8 256,512 439.136,460.832 480,0 "
+              />
+              <polygon
+                style="fill: #fafafa"
+                points="392.768,150.688 387.616,208.576 372.064,382.112 256,414.208 255.904,414.24 139.904,382.112 131.808,291.36 188.64,291.36 192.864,338.432 255.936,355.456 255.968,355.424 319.136,338.4 327.744,259.968 129.088,260.512 123.456,206.88 332.512,204.416 336.736,147.008 117.856,147.616 114.176,94.208 256,94.208 397.824,94.208 "
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="camera">
+          <h3>Fotografi</h3>
+          <img src="" alt="" />
+          <h3>Videografi</h3>
+          <h3>Film maker</h3>
+        </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <!-- end skill -->
+
+    <!-- project -->
+    <div class="wrap-project">
+      <div class="project" id="project">
+        <h2>Project</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+          excepturi voluptates nulla unde aut alias voluptatem natus, possimus
+          eligendi atque hic. Deleniti incidunt molestiae consectetur, numquam
+          nisi doloremque minus officiis.
+        </p>
+        <div class="project-list">
+          <div>
+            <video loop autoplay>
+              <source
+                src="https://drive.google.com/file/d/1Smaz_BaPhP5IV7lQUT3uQIK09PearW1N/view?usp=share_link"
+                type="video/mp4"
+              />
+            </video>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+              dicta.
+            </h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis aspernatur, cupiditate adipisci cum ipsum nisi vel
+              nesciunt commodi repellat quibusdam?
+            </p>
+          </div>
+          <div>
+            <video src=""></video>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
+              sapiente.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+              aspernatur? Nihil, nobis nulla reprehenderit commodi reiciendis
+              eligendi illo dignissimos odio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end project -->
+
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <div>
+        <p>Nama</p>
+        <input type="text" placeholder="Masukan nama anda" />
+        <p>Email</p>
+        <input type="text" placeholder="Masukan email anda" />
+        <p>Pesan</p>
+        <textarea
+          placeholder="Isi Pesan"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" class="submit" value="Kirim" />
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <div class="footer">
+      <p>© 2022 Narapati Keysa Anandi</p>
+    </div>
+    <!-- end footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
