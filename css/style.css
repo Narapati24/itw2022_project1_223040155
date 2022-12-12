@@ -59,22 +59,9 @@ body {
   font-size: 50px;
 }
 
-.hero h1 span {
-  color: #f4e9cd;
-  font-size: 60px;
-}
-
 .photo-profile img {
-  width: 350px;
+  width: 400px;
   border-radius: 30%;
-}
-
-.photo-profile svg {
-  position: absolute;
-  width: 550px;
-  margin-top: -67px;
-  margin-left: -450px;
-  z-index: -99;
 }
 
 .circle {
@@ -83,7 +70,7 @@ body {
   height: 640px;
   box-shadow: 0 0 10px 12px #468189, 0 0 5px 5px #468189 inset;
   border-radius: 50%;
-  margin: -500px 0 0 -250px;
+  margin: -520px 0 0 -250px;
   z-index: -99;
   animation: fade 8s infinite;
 }
@@ -114,8 +101,6 @@ body {
 }
 
 .sosmed {
-  /* display: flex; */
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -123,10 +108,6 @@ body {
   max-width: 600px;
   min-width: 200px;
 }
-
-/* .sosmed-list {
-  width: 200px;
-} */
 
 .sosmed-list a svg {
   max-width: 40px;
@@ -172,8 +153,16 @@ body {
   width: 100px;
 }
 
-.skill .camera {
-  margin-top: 30px;
+.skill .camera div {
+  display: inline;
+  width: 100px;
+  border: 10px solid #f4e9cd;
+  border-radius: 50%;
+}
+
+.skill .camera img {
+  width: 100px;
+  margin-top: 20px;
 }
 
 /* Project */
@@ -194,25 +183,40 @@ body {
 .project h2 {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .project .project-list {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
+.project-list h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-list p {
+  margin-top: 5px;
+}
+
 .project .project-list div {
-  /* border: 1px solid white; */
   max-width: 480px;
+  background-color: #f4e9cd;
+  margin: 0 20px;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .project .project-list div video {
   border-radius: 10px;
+  pointer-events: none;
 }
 
 /* Contact */
 .contact {
-  /* text-align: center; */
   padding-top: 100px;
   padding-bottom: 100px;
 }
