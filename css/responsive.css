@@ -1,0 +1,76 @@
+@media (max-width: 576px) {
+  /* navigation */
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav div {
+    margin: 0 10px;
+  }
+
+  .nav-list-icon {
+    position: relative;
+  }
+
+  .nav-list-icon a img {
+    display: block;
+  }
+
+  .nav-list-icon a:target {
+    display: block;
+  }
+
+  /* hero */
+  .hero {
+    flex-direction: column-reverse;
+    width: 450px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-nama {
+    font-size: 40px;
+  }
+
+  .photo-profile img {
+    width: 320px;
+  }
+
+  .circle {
+    width: 470px;
+    height: 470px;
+    margin: -400px 0 0 -72px;
+  }
+
+  /* skill */
+  .skill-list {
+    flex-direction: column;
+  }
+
+  .bahasa {
+    margin: 50px 0;
+  }
+
+  /* project */
+  .project .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project .project-list div {
+    margin: 10px;
+  }
+}
