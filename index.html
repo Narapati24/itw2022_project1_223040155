@@ -18,14 +18,19 @@
       <div>
         <h3>Narapati.</h3>
       </div>
-      <div class="nav-list">
-        <ul id="nav-list">
+      <div class="nav-list" id="nav-list" id="nav-list2">
+        <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skill">Skill</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-list-icon2">
+          <a href="#">
+            <img src="img/list-svgrepo-com.svg" alt="" />
+          </a>
+        </div>
       </div>
       <div class="nav-list-icon">
         <a href="#nav-list">
@@ -271,7 +276,9 @@
     <!-- end footer -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+      });
     </script>
   </body>
 </html>

@@ -55,7 +55,13 @@ body {
   position: absolute;
 }
 
-.nav-list-icon a img {
+.nav-list-icon2 {
+  position: absolute;
+  z-index: 9999;
+}
+
+.nav-list-icon a img,
+.nav-list-icon2 a img {
   width: 30px;
   display: none;
 }

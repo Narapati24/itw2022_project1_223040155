@@ -29,3 +29,23 @@
     opacity: 0;
   }
 }
+
+@keyframes moveleft {
+  0% {
+    transform: translatex(700px);
+  }
+
+  100% {
+    transform: translatex(0);
+  }
+}
+
+@keyframes moveright {
+  0% {
+    transform: translatex(0);
+  }
+
+  100% {
+    transform: translatex(700px);
+  }
+}
