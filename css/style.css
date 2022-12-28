@@ -114,10 +114,11 @@ body {
   padding-bottom: 100px;
   color: #031926;
   box-shadow: 0 0 10px 10px #77aca2;
+  text-align: center;
 }
 
 .about-about {
-  max-width: 600px;
+  max-width: 1000px;
 }
 
 .about h2 {
@@ -129,7 +130,25 @@ body {
   color: black;
 }
 
+.photo-about {
+  display: flex;
+  flex-direction: row;
+}
+
+.photo-about img {
+  height: 300px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.ket-sosmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .sosmed {
+  margin-top: 30px;
   align-items: center;
   justify-content: space-between;
   text-align: center;
@@ -260,23 +279,24 @@ body {
   font-weight: bold;
 }
 
-.contact div {
+.contact form {
   max-width: 400px;
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 
-.contact div p {
+.contact form label {
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-.contact div input {
+.contact form input {
   padding: 10px;
   border-radius: 10px;
 }
 
-.contact div textarea {
+.contact form textarea {
   resize: none;
   border-radius: 10px;
 }
