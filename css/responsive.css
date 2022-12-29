@@ -71,6 +71,7 @@
   .hero {
     flex-direction: column-reverse;
     width: 300px;
+    height: 480px;
   }
   .hero h1 {
     font-size: 30px;
@@ -81,6 +82,7 @@
   }
 
   .photo-profile img {
+    margin-top: -40px;
     width: 220px;
   }
 

@@ -289,11 +289,15 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbzI_OC6ylKmwC9aZXlS6U9M0z97SHOz5MPNBSxEXbu5V4j-13b2KzcWYDag1RibxH3w/exec";
       const form = document.forms["project1-contact-form"];
+      const btnKirim = document.querySelector(".submit");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+          .then((response) => {
+            form.reset();
+            console.log("Success!", response);
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
