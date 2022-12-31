@@ -18,7 +18,7 @@
       <div>
         <h3>Narapati.</h3>
       </div>
-      <div class="nav-list" id="nav-list">
+      <div class="nav-list">
         <ul>
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -26,16 +26,12 @@
           <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="nav-list-icon2">
-          <a href="#">
-            <img src="img/list-svgrepo-com.svg" alt="" />
-          </a>
-        </div>
       </div>
-      <div class="nav-list-icon">
-        <a href="#nav-list">
-          <img src="img/list-svgrepo-com.svg" alt="" />
-        </a>
+      <div class="menu-toggle">
+        <input id="checkbox" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
     <!-- end nav -->
@@ -285,21 +281,6 @@
         once: true,
       });
     </script>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzI_OC6ylKmwC9aZXlS6U9M0z97SHOz5MPNBSxEXbu5V4j-13b2KzcWYDag1RibxH3w/exec";
-      const form = document.forms["project1-contact-form"];
-      const btnKirim = document.querySelector(".submit");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

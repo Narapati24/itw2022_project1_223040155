@@ -6,13 +6,14 @@ html {
 body {
   background-color: #031926;
   color: #77aca2;
+  overflow-x: hidden;
 }
 
 /* navigasi */
 .nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(70, 129, 137, 0.7);
+  background-color: rgba(70, 129, 137, 1);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -28,16 +29,12 @@ body {
 }
 
 .nav .nav-list {
-  max-width: 1000px;
+  width: 40%;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-between;
-}
-
-.nav ul li {
-  padding-right: 10px;
 }
 
 .nav ul li a {
@@ -51,18 +48,7 @@ body {
   color: #f4e9cd;
 }
 
-.nav-list-icon {
-  position: absolute;
-}
-
-.nav-list-icon2 {
-  position: absolute;
-  z-index: 9999;
-}
-
-.nav-list-icon a img,
-.nav-list-icon2 a img {
-  width: 30px;
+.menu-toggle {
   display: none;
 }
 

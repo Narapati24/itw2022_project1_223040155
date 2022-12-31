@@ -1,4 +1,10 @@
 @media (max-width: 990px) {
+  /* navigation */
+  .nav .nav-list {
+    width: 50%;
+  }
+
+  /* project */
   .project .project-list div video {
     width: 280px;
   }
@@ -15,25 +21,26 @@
   }
 
   .nav-list {
-    background-color: rgba(70, 129, 137, 0.7);
     position: absolute;
     top: 0px;
     height: 100vh;
-    width: 100%;
+    width: 100% !important;
     left: -10px;
-    transform: translateX(700px);
-    z-index: 9999;
-    padding-top: 50px;
+    z-index: -9999;
+    transform: translateY(-100%);
+    background-color: rgba(70, 129, 137, 1);
+    transition: all 0.8s;
   }
 
   .nav-list ul {
+    height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
-  .nav-list ul li {
-    margin: 50px;
+  .nav-list.slide {
+    transform: translateY(0) !important;
   }
 
   .nav-list ul li a {
@@ -44,27 +51,47 @@
     margin: 0 10px;
   }
 
-  .nav-list-icon {
-    position: relative;
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
   }
 
-  .nav-list-icon2 {
+  .menu-toggle input {
     position: absolute;
-    right: 0;
-    top: 10px;
+    width: 40px;
+    height: 28px;
+    right: 1px;
+    top: 6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
   }
 
-  .nav-list-icon a img,
-  .nav-list-icon2 a img {
+  .menu-toggle span {
     display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #f4e9cd;
+    border-radius: 3px;
+    transition: all 0.9s;
   }
 
-  .nav-list:target {
-    animation: moveleft 700ms forwards;
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 100%;
   }
 
-  .nav-list2:target {
-    animation: moveright 700ms forwards;
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(2px, -7px);
   }
 
   /* hero */
@@ -97,6 +124,10 @@
     display: none;
   }
 
+  .ket-sosmed {
+    width: 300px;
+  }
+
   /* skill */
   .skill-list {
     flex-direction: column;
@@ -104,6 +135,14 @@
 
   .bahasa {
     margin: 50px 0;
+  }
+
+  .skill .bahasa svg {
+    width: 60px;
+  }
+
+  .skill .camera img {
+    width: 60px;
   }
 
   /* project */
@@ -116,4 +155,14 @@
     margin: 10px;
     max-width: 280px;
   }
+}
+
+/* contact */
+.contact form {
+  max-width: 320px;
+}
+
+/* footer */
+.footer {
+  padding-bottom: 25px;
 }
