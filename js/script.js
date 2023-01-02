@@ -40,6 +40,17 @@ function discord_message(username, message) {
   };
 }
 
+// loader
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild("loader");
+  });
+});
+
 // contact
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbzI_OC6ylKmwC9aZXlS6U9M0z97SHOz5MPNBSxEXbu5V4j-13b2KzcWYDag1RibxH3w/exec";
@@ -51,6 +62,7 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       form.reset();
+      alert("Terima Kasih Sudah Memberi Pesan!");
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
