@@ -126,6 +126,7 @@
 
   .ket-sosmed {
     width: 300px;
+    text-align: center;
   }
 
   /* skill */
@@ -154,6 +155,14 @@
   .project .project-list div {
     margin: 10px;
     max-width: 280px;
+  }
+
+  .mobile-video {
+    display: block;
+  }
+
+  .desktop-video {
+    display: none;
   }
 }
 
