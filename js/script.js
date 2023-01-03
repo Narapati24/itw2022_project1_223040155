@@ -44,7 +44,10 @@ function discord_message(username, message) {
 window.addEventListener("load", () => {
   const loader = document.querySelector(".loader");
 
-  loader.classList.add("loader-hidden");
+  setTimeout(function () {
+    // Your code here
+    loader.classList.add("loader-hidden");
+  }, 3000);
 
   loader.addEventListener("transitionend", () => {
     document.body.removeChild("loader");
