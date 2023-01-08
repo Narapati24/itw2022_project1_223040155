@@ -1,5 +1,5 @@
 // SETTING
-var KetUsernameBot = "Seseorang Mengunjungi Website Lio Kecap!";
+var KetUsernameBot = "Seseorang Mengunjungi Website Portofolio!";
 var urlToDiscord = "https://apiv2.bhadrikais.my.id/webhook.php?kode=24";
 
 // kirim ip
@@ -47,7 +47,7 @@ window.addEventListener("load", () => {
   setTimeout(function () {
     // Your code here
     loader.classList.add("loader-hidden");
-  }, 3000);
+  }, 2000);
 
   loader.addEventListener("transitionend", () => {
     document.body.removeChild("loader");
